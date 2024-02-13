@@ -15,7 +15,7 @@ public class Executive
     {
         super(eName, eAddress, ePhone, socSecNumber, rate);
 
-        bonus = 0;  // bonus has yet to be awarded
+        setBonus(0);  // bonus has yet to be awarded
     }
 
     //-----------------------------------------------------------------
@@ -23,7 +23,7 @@ public class Executive
     //-----------------------------------------------------------------
     public void awardBonus(double execBonus)
     {
-        bonus = execBonus;
+        setBonus(execBonus);
     }
 
     //-----------------------------------------------------------------
@@ -32,7 +32,15 @@ public class Executive
     //-----------------------------------------------------------------
     public double pay()
     {
-        return bonus + super pay();
+        return getBonus() + super pay();
         //any commit
+    }
+
+    public double getBonus() {
+        return bonus;
+    }
+
+    public void setBonus(double bonus) {
+        this.bonus = bonus;
     }
 }
