@@ -47,6 +47,8 @@ package com.mycompany.agency;
     //-----------------------------------------------------------------
     public String toString()
     {
+        String result = "Name: " + getName() + "\n" + "Address: " + getAddress() + "\n" + "Phone: " + getPhone();
+        return result;
 
     }
 
@@ -54,7 +56,9 @@ package com.mycompany.agency;
     //  Derived classes must define the pay method for each type of
     //  employee.
     //-----------------------------------------------------------------
-    public abstract double pay();
+    public double pay() {
+        return 0;
+    }
 
 
 }
