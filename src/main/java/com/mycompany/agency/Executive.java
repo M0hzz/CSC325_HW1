@@ -32,6 +32,7 @@ public class Executive
     //-----------------------------------------------------------------
     public double pay()
     {
-       
+        return bonus + super pay();
+        //any commit
     }
 }
