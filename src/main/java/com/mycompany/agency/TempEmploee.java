@@ -35,7 +35,7 @@ public class TempEmploee extends StaffEmployee
     //-----------------------------------------------------------------
     public double pay()
     {
-
+    return hoursWorked * payRate;
     }
 
     //-----------------------------------------------------------------
@@ -43,6 +43,9 @@ public class TempEmploee extends StaffEmployee
     //-----------------------------------------------------------------
     public String toString()
     {
-
+        String result = super.toString();
+        result += "\nHours Worked: " + hoursWorked;
+        return result;
     }
-}
+    }
+
