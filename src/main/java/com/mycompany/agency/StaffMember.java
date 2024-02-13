@@ -5,19 +5,41 @@ package com.mycompany.agency;
 // TODO 1: Make this class work and public
  class StaffMember
 {
-    protected String name;
-    protected String address;
-    protected String phone;
+    private String name;
+    private String address;
+    private String phone;
+    public String getName() {
+        return name;
+    }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
     //-----------------------------------------------------------------
     //  Constructor: Sets up this staff member using the specified
     //  information.
     //-----------------------------------------------------------------
     public StaffMember(String eName, String eAddress, String ePhone)
     {
-        name = eName;
-        address = eAddress;
-        phone = ePhone;
+        setName(eName);
+        setAddress(eAddress);
+        setPhone(ePhone);
     }
 
     //-----------------------------------------------------------------
@@ -33,4 +55,6 @@ package com.mycompany.agency;
     //  employee.
     //-----------------------------------------------------------------
     public abstract double pay();
+
+
 }
