@@ -47,7 +47,7 @@ package com.mycompany.agency;
     //-----------------------------------------------------------------
     public String toString()
     {
-        String result = "Name: " + getName() + "\n" + "Address: " + getAddress() + "\n" + "Phone: " + getPhone();
+        String result = "Name: " + getName() + "\n" + "Address: " + getAddress() + "\n" + "Phone: " + getPhone()+ "\n";
         return result;
 
     }

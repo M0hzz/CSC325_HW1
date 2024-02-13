@@ -44,7 +44,7 @@ public class TempEmploee extends StaffEmployee
     public String toString()
     {
         String result = super.toString();
-        result += "\nHours Worked: " + hoursWorked;
+        result += "\nCurrent hours: " + hoursWorked;
         return result;
     }
     }
